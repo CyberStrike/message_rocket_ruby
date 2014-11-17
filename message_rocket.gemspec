@@ -27,5 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'celluloid', '~> 0.15.2'
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  %w| rake dotenv rspec-core rspec-mocks rspec-expectations pry |.each do |gem|
+    spec.add_development_dependency gem
+  end
 end
