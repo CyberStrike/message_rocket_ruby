@@ -1,12 +1,12 @@
 module MessageRocket
   class SubscriptionRequest < Request
 
-    def permit
-      respond_with PermitResponse.new(self)
+    def permit permissions=:read_write
+      respond_with PermitResponse.new(self, permissions)
     end
 
-    def deny
-      respond_with DenyResponse.new(self)
+    def deny message="Subscription denied"
+      respond_with DenyResponse.new(self, message)
     end
 
     private

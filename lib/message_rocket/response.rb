@@ -1,8 +1,9 @@
 module MessageRocket
   class Response
 
-    def initialize request
+    def initialize request, options
       @request = request
+      @options = options
     end
 
     def id
@@ -18,7 +19,9 @@ module MessageRocket
         response: {
           id:           id,
           responseType: response_type
-        }
+        }.tap do |r|
+          r[:options] = @options if @options
+        end
       }
     end
   end
