@@ -13,6 +13,7 @@ module MessageRocket
   autoload :DenyResponse,        File.expand_path('../message_rocket/deny_response.rb', __FILE__)
   autoload :Authoriser,          File.expand_path('../message_rocket/authoriser.rb', __FILE__)
   autoload :CallbackMapper,      File.expand_path('../message_rocket/callback_mapper.rb', __FILE__)
+  autoload :Helpers,             File.expand_path('../message_rocket/helpers.rb', __FILE__)
 
   Engine = Class.new Rails::Engine if defined? Rails::Engine
 
