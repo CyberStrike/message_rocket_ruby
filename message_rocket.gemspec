@@ -12,10 +12,8 @@ Gem::Specification.new do |spec|
   spec.description   = <<-EOF
   MessageRocket (messagerocket.co) is a realtime websocket add-on for Heroku
   providing pub/sub messaging.
-  This gem provides the `message_rocket_link_tags` helper which automatically
-  loads the MessageRocket client side JavaScript library.
   EOF
-  spec.homepage      = "http://messagerocket.co/ruby"
+  spec.homepage      = "http://messagerocket.co/docs/ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

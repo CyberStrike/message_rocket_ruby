@@ -1,24 +1,8 @@
 # MessageRocket
 
-TODO: Write a gem description
+[MessageRocket](https://messagerocket.co/) is a realtime websocket add-on for Heroku providing pub/sub messaging.
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'message_rocket'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install message_rocket
-
-## Usage
-
-TODO: Write usage instructions here
+Please see our [detailed documentation](https://messagerocket.co/docs/ruby) for information on installing and using this Gem.
 
 ## Contributing
 
