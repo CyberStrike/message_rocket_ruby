@@ -1,9 +1,10 @@
 module MessageRocket
   module Helpers
     def message_rocket_link_tag
-      message_rocket_public_key_meta_tag +
-        message_rocket_uri_meta_tag +
-        message_rocket_javascript_tag
+     [message_rocket_public_key_meta_tag,
+      message_rocket_uri_meta_tag,
+      message_rocket_javascript_tag
+      ].join("\n").html_safe
     end
 
     def message_rocket_public_key_meta_tag
